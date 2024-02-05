@@ -1,3 +1,4 @@
+#1list all objects in S3 bucket
 import boto3
 
 s3_console = boto3.resource('s3')
