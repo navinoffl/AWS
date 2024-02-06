@@ -2,6 +2,6 @@
 import boto3
 
 s3_console = boto3.resource('s3')
-bucket_console = s3_console.Bucket('South India’)
+bucket_console = s3_console.Bucket('southindia’)
 for obj in bucket_console.objects.all():
     print(obj.key)
