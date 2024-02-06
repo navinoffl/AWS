@@ -1,0 +1,10 @@
+#2Read the object (file) data from S3 bucket 
+import boto3
+import json
+
+s3 = boto3.client('s3')
+
+obj = s3.get_object(Bucket='southindia', Key='sample.txt')
+data = obj['Body'].read()
+print("the data is")
+print (data)
